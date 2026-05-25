@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Subscription App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+            <h2>Welcome, <span id="user_name"></span></h2>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <hr>
+
+        <!-- SUBSCRIPTIONS -->
+        <h3>Your Subscriptions</h3>
+
+        <div id="subscriptions">
+            No subscriptions yet.
+        </div>
+
+        <hr>
+
+        <!-- QUERY AREA -->
+        <h3>Search Music</h3>
+
+        <div class="search-grid">
+            
+            <input type="text" id="title" placeholder="Title">
+            
+            <input type="text" id="artist" placeholder="Artist">
+            
+            <input type="number" id="year" placeholder="Year">
+            
+            <input type="text" id="album" placeholder="Album">
+        
+        </div>
+
+        <button onclick="queryMusic()">Query</button>
+
+        <p id="query_message"></p>
+
+        <hr>
+
+        <!-- RESULTS -->
+        <div id="results"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
